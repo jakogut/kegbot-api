@@ -1,7 +1,7 @@
 option java_package = "org.kegbot.proto";
 option optimize_for = CODE_SIZE;
 
-import "models.proto";
+import "kegbot/api/models.proto";
 
 // Common
 

@@ -1,7 +1,7 @@
 all: python
 
 python:
-	protoc -Iproto/ --python_out=python/kegbot/api proto/*proto
+	protoc -Iproto/ --python_out=python/ proto/kegbot/api/*proto
 
 clean:
 	rm -rf build dist
