@@ -20,8 +20,8 @@ class Error(Exception):
   """An error occurred."""
   HTTP_CODE = 400
   def Message(self):
-    if self.message:
-      return self.message
+    if self.msg:
+      return self.msg
     m = self.__class__.__doc__
     m = m.split('\n', 1)[0]
     return m

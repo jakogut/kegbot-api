@@ -42,10 +42,10 @@ def ProtoMessageToDict(message):
   return ret
 
 def DictToProtoMessage(values, out_message):
-  for name, field in out_message.DESCRIPTOR.fields_by_name.iteritems():
+  for name, field in out_message.DESCRIPTOR.fields_by_name.items():
     if name not in values:
       if field.label == field.LABEL_REQUIRED:
-        raise ValueError, "Missing required field %s" % name
+        raise ValueError("Missing required field %s" % name)
       continue
 
     value = values.get(name)
